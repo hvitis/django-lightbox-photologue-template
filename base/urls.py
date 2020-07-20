@@ -1,10 +1,9 @@
 from django.urls import path
-from .views import homepage, bootstrap
+from .views import homepage
 
 # base App urls
 
 urlpatterns = [
     path('', homepage, name='homepage'),
-    path('bootstrap/', bootstrap, name='bootstrap'),
 ]
 

@@ -1,17 +1,12 @@
 from django.shortcuts import render
-
+from .models import Post
 # Example dynamic data
 from datetime import date
 
 # Tailwinds CSS homepage
 def homepage(request):
-    return render(request, 'base/homepage.html',)
-
-# Bootstrap Homepage
-def bootstrap(request):
-
-    this_year = date.today().year
-
-    return render(request, 'bootstrap/bootstrap.html', context={
-        'year': this_year,
-    })
+    post_list = Post.objects.all()
+    context = {}
+    context['post_list'] = post_list
+    print(context)
+    return render(request, 'base.html', context)

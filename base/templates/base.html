@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tailwind Starter Template - Hero Product : Tailwind Toolbox</title>
+	<meta name="author" content="name">
+    <meta name="description" content="description here">
+	<meta name="keywords" content="keywords,here">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> <!--Replace with your tailwind.css once created-->
+	<link href="{% static 'lightbox.css' %}" rel="stylesheet"> <!--Totally optional :) -->
+
+</head>
+<body class="bg-gray-400 font-sans leading-normal tracking-normal">
+
+	<!--Nav-->
+	<nav class="bg-gray-800 p-2 mt-0 w-full"> <!-- Add this to make the nav fixed: "fixed z-10 top-0" -->
+        <div class="container mx-auto flex flex-wrap items-center">
+		    <div class="flex w-full md:w-1/2 justify-center md:justify-start text-white font-extrabold">
+				<a class="text-white no-underline hover:text-white hover:no-underline" href="#">
+					<span class="text-2xl pl-2"><i class="em em-grinning"></i> Lightbox Sample Usage </span>
+				</a>
+            </div> 
+        </div>
+    </nav>
+
+	<div class="container"> 
+	{% for post in post_list %}
+		<h1>{{post.title}}</h1>
+		<p>{{post.content}}</p>
+
+		<!--Gallery-->
+		<div class="row"> 
+		{% for photo in post.gallery.sample %}
+			<a class="align-self-center" title="{{ photo.title }}" href="{{ photo.get_display_url }}" data-lightbox="gallery-example" max-height="150px">
+				<img src="{{ photo.get_thumbnail_url }}" >
+			</a>   
+		{% endfor %}
+		</div>
+	{% endfor %}
+	</div>
+
+ 
+	<script src="{% static 'lightbox-plus-jquery.js' %}"></script>
+	<script>
+		lightbox.option({
+		'resizeDuration': 200,
+		'wrapAround': true
+		})
+	</script>
+</body>
+</html>
