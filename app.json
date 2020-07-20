@@ -1,0 +1,7 @@
+{
+  "name": "Django Heroku Basic Template",
+  "description": "A barebones Django app for Heroku",
+  "repository": "https://github.com/FullBoreStudios/django-heroku-basic-template",
+  "logo": "https://i.imgur.com/wJ5I0PJ.png",
+  "keywords": ["django", "template", "heroku"]
+}

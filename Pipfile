@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[requires]
+python_version = "3.7.5"
+
+[packages]
+django-heroku = "*"
+gunicorn = "*"
+qdds = "*"
+django = ">=3.0.7"
+
+[dev-packages]
