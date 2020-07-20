@@ -1,23 +1,33 @@
 [![Python 3](https://pyup.io/repos/github/benmcnelly/qdds/python-3-shield.svg)](https://pyup.io/repos/github/benmcnelly/qdds/)
 [![](https://img.shields.io/badge/badger-approved-ff69b4.svg)](https://www.youtube.com/watch?v=EIyixC9NsLI)
 
-# django-heroku-basic-template
-Basic Django setup for deploying to heroku
+# 🖼️ django-photologue-lightbox2
 
-# New Features
-- Basic App
-  - Completely Optional
-  - Default Migrations
-  - Comes with Tailwinds and Bootstrap starter themes out of the box
-  - Custom splash homepage replaces default Django "it worked" page
-  - Latest Greatest Python and Django
+This is the simpliest and __quickest to set up__ app to show usage of Lightbox with a great Django library for photos and galleries.
 
-# How to use
-  1. Click the "Use this template" button
-  2. Name and create your own repo based off this one
-  3. Change the readme code for the button below to link to the new url 
-  of your repo.
-  4. Click button and follow steps on Heroku
-  5. Get to work writing models, urls, and views with Django!
+### Uses:
+- [django-photologue][0]
+- [Lightbox 2][1] downloaded from [here][2]
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy/?template=https://github.com/FullBoreStudios/django-heroku-basic-template)
+### Example at work:
+
+- Template:
+
+![Photologue Admin](./django-photologue-lightbox.png)
+
+- Admin:
+
+![Photologue Admin](./django-photologue-admin.png)
+
+### Installation instructions:
+
+[Installation and instructions][3] on my blog.
+
+
+
+
+
+[0]: https://django-photologue.readthedocs.io/en/stable/index.html
+[1]: https://lokeshdhakar.com/projects/lightbox2/
+[2]: https://github.com/lokesh/lightbox2/releases
+[3]: https://hvitis.dev/the-best-and-easiest-django-gallery-with-elegant-css

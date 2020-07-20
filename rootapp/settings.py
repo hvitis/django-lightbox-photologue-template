@@ -44,12 +44,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'photologue',
     'sortedm2m',
+    'blog'
 ]
 
-# Custom Apps that you make!
-INSTALLED_APPS += [
-    'base'
-]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
