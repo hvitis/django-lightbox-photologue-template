@@ -9,6 +9,11 @@ This is the simpliest and __quickest to set up__ app to show usage of Lightbox w
 - [django-photologue][0]
 - [Lightbox 2][1] downloaded from [here][2]
 
+
+### Installation instructions:
+
+[Installation and instructions][3] on my blog.
+
 ### Example at work:
 
 - Template:
@@ -19,9 +24,6 @@ This is the simpliest and __quickest to set up__ app to show usage of Lightbox w
 
 ![Photologue Admin](./django-photologue-admin.png)
 
-### Installation instructions:
-
-[Installation and instructions][3] on my blog.
 
 
 
